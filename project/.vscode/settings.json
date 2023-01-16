@@ -1,0 +1,40 @@
+{
+    // testing
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    // linting & formatting
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "vscodeGitCommit.variables": {
+        "prefix": "aliases",
+        "aliases": [
+            {
+                "label": "wip",
+                "detail": "Work in progress."
+            },
+            {
+                "label": "fix",
+                "detail": "Fix something wrong."
+            },
+            {
+                "label": "docs",
+                "detail": "Change documentation."
+            },
+            {
+                "label": "sub",
+                "detail": "Some subsidary work."
+            },
+            {
+                "label": "ref",
+                "detail": "Refactoring."
+            }
+        ]
+    },
+    "vscodeGitCommit.template": [
+        "{prefix}[JML-{issue}]: {message}"
+    ],
+}
